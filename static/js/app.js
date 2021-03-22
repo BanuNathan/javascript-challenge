@@ -5,20 +5,13 @@ var tableData = data;
 var button = d3.select(".btn-default");
 
 // Select the form
-var form = d3.select(".form-group");
+var form = d3.select("form");
 
-var inputElement = d3.select("#datetime");
-var inputValue = inputElement.property("value");
-
-console.log(inputValue)
 
 // Create event handlers 
 button.on("click", runEnter);
 form.on("submit", runEnter);
-
-
-
-
+//button.on("submit", runEnter);
 
 
 function runEnter() {
@@ -44,17 +37,16 @@ function runEnter() {
         var cell = row.append("td");
         cell.text("NO DATA FOUND");
 
-    }
+    }else{
 
-
-    filteredData.forEach((dataRow) => {
-        var row = tbody.append("tr");
-        Object.entries(dataRow).forEach(([key, value]) => {
-          var cell = row.append("td");
-          cell.text(value);
+        filteredData.forEach((dataRow) => {
+            var row = tbody.append("tr");
+            Object.entries(dataRow).forEach(([key, value]) => {
+            var cell = row.append("td");
+            cell.text(value);
+            });
         });
-    });
-
+    }
 
 
 }
