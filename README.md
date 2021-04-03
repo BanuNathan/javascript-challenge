@@ -1,3 +1,3 @@
 ### The extra-terrestrial menace has come to Earth and we here at ALIENS-R-REAL have collected all of the eye-witness reports we could to prove it! All we need to do now is put this information online for the world to see and then the matter will finally be put to rest. 
 
-### Usin JavaScript, HTML, and CSS, and D3.js
+### Using JavaScript, HTML, and CSS, and D3.js a table is created dynamically using the provided dataset. 
